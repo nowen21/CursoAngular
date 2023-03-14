@@ -12,6 +12,7 @@ import { PortfolioComponent } from './components/layouts/company/portfolio/portf
 import { ClientsComponent } from './components/layouts/company/clients/clients.component';
 import { FooterComponent } from './components/layouts/company/footer/footer.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
