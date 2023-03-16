@@ -1,0 +1,32 @@
+<app-layout>
+    <div breadcrumbs>
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>ngAfterContentInit</h2>
+                <ol>
+                    <li>
+                        <a routerLink="/homexxxx">Home</a>
+                    </li>
+                    <li>
+                        Curso Angular
+                    </li>
+                    <li>
+                        Lifecycle Components
+                    </li>
+                    <li>
+                        ngAfterContentInit
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <p>after-content-init-parent works!</p>
+    <app-after-content-init-child>
+        contenido ingresado desde el componente padre al hijo
+        <app-after-content-init-grandchild>
+            contenido ingresado desde el componente padre al nieto
+        </app-after-content-init-grandchild>
+    </app-after-content-init-child>
+</app-layout>

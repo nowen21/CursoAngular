@@ -1,0 +1,50 @@
+<app-layout>
+    <div breadcrumbs>
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>ngDoCheck</h2>
+                <ol>
+                    <li>
+                        <a routerLink="/homexxxx">Home</a>
+                    </li>
+                    <li>
+                        Curso Angular
+                    </li>
+                    <li>
+                        Lifecycle Components
+                    </li>
+                    <li>
+                        ngDoCheck
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>{{title}}</h2>
+            Detecta todos los cambios que ha tenido el componente
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <label class="form-label" for="power-input">Power: </label>
+                    <input class="form-control" type="text" id="power-input" [(ngModel)]="power">
+                </div>
+                <div class="col-6">
+                    <label class="form-label" for="hero-name">Hero.name: </label>
+                    <input class="form-control" type="text" id="hero-name" [(ngModel)]="hero.name">
+
+                </div>
+            </div>
+        </div>
+        <div class="card-footer">
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" (click)="reset()">Reset Log</button>
+            </div>
+            <app-do-check-child [hero]="hero" [power]="power"></app-do-check-child>
+        </div>
+    </div>
+</app-layout>

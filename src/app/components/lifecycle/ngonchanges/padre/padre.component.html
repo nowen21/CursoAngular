@@ -1,0 +1,45 @@
+<app-layout>
+    <div breadcrumbs>
+        <div class="container">
+
+            <div class="d-flex justify-content-between align-items-center">
+                <h2>ngOnChanges</h2>
+                <ol>
+                    <li>
+                        <a routerLink="/homexxxx">Home</a>
+                    </li>
+                    <li>
+                        Curso Angular
+                    </li>
+                    <li>
+                        Lifecycle Components
+                    </li>
+                    <li>
+                        ngOnChanges
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+    <div class="card">
+        <div class="card-header">
+            <h2>{{title}}</h2>
+            Se pueden agregar todas funcionalidades que se requieran
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-6">
+                    <label class="form-label" for="name">Saludo desde el Padre:</label>
+                    <input id="saludo" class="form-control" type="text" [(ngModel)]="saludo">
+                </div>
+                <div class="col-6">
+                    <app-hijo [saludo]="saludo"></app-hijo>
+                </div>
+            </div>
+        </div>
+        <div class="form-group card-footer text-muted text-center">
+            <button class="btn btn-primary" type="button" (click)="reset()">Reset Padre</button>
+        </div>
+    </div>
+</app-layout>
