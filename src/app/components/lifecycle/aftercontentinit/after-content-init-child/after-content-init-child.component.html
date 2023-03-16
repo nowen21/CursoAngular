@@ -1,2 +1,20 @@
-<p>after-content-init-child works!</p>
-<ng-content></ng-content>
+<div class="card">
+    <div class="card-header">
+        Comienza el contenido proyectado
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <ng-content></ng-content>
+            </div>
+            <div class="col-12">
+                <p *ngIf="comment" class="comment">
+                    {{comment}}
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="card-footer">
+        Finaliza el contenido proyectado
+    </div>
+</div>

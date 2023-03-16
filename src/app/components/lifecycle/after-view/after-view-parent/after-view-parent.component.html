@@ -24,16 +24,12 @@
     </div>
     <div class="card">
         <div class="card-header">
-            <h2>AfterContent</h2>
+            <h2>AfterView</h2>
         </div>
         <div class="card-body">
             <div class="row">
                 <div class="col-12">
-                    <div *ngIf="show">
-                        <app-after-content-init-child>
-                            <app-after-content-init-grandchild></app-after-content-init-grandchild>
-                        </app-after-content-init-child>
-                    </div>
+                      <app-after-view-child  *ngIf="show"></app-after-view-child>
                 </div>
             </div>
         </div>
@@ -47,7 +43,7 @@
                 <div class="col-6">
                     <h3>AfterContent Logs</h3>
                     <button class="btn btn-primary" type="button" (click)="reset()">Reset</button>
-                    <div *ngFor="let msg of logger.logs" class="log">{{msg}}</div>
+                    <div *ngFor="let msg of logger.logs" class="success">{{msg}}</div>
                 </div>
             </div>
         </div>

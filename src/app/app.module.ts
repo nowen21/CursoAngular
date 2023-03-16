@@ -30,7 +30,10 @@ import { DoCheckChildComponent } from './components/lifecycle/do-check-child/do-
 import { AfterContentInitParentComponent } from './components/lifecycle/aftercontentinit/after-content-init-parent/after-content-init-parent.component';
 import { AfterContentInitChildComponent } from './components/lifecycle/aftercontentinit/after-content-init-child/after-content-init-child.component';
 import { AfterContentInitGrandchildComponent } from './components/lifecycle/aftercontentinit/after-content-init-grandchild/after-content-init-grandchild.component';
-
+import { LoggerService } from './components/lifecycle/services/logger.service';
+import { AfterViewGrandChildComponent } from './components/lifecycle/after-view/after-view-grand-child/after-view-grand-child.component';
+import { AfterViewChildComponent } from './components/lifecycle/after-view/after-view-child/after-view-child.component';
+import { AfterViewParentComponent } from './components/lifecycle/after-view/after-view-parent/after-view-parent.component';
 
 
 
@@ -41,6 +44,7 @@ const app_routes: Routes = [
   { path: 'docheckx', component: DoCheckeParentComponent },
   { path: 'oninitxx', component: OnInitComponent },
   { path: 'aftecont', component: AfterContentInitParentComponent },
+  { path: 'afteview', component: AfterViewParentComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'homexxxx' },
 ];
 
@@ -68,6 +72,9 @@ const app_routes: Routes = [
     AfterContentInitParentComponent,
     AfterContentInitChildComponent,
     AfterContentInitGrandchildComponent,
+    AfterViewGrandChildComponent,
+    AfterViewChildComponent,
+    AfterViewParentComponent,
  
   
 
@@ -83,7 +90,9 @@ const app_routes: Routes = [
     }),
     FormsModule
   ],
-  providers: [],
+  providers: [
+    LoggerService
+  ],
   bootstrap: [AppComponent],
     // exportar la funcionalidad seleccionada para que la utilicen otros NgModules.
     exports: [
