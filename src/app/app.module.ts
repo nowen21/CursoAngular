@@ -72,6 +72,15 @@ import { PadreMetaComponent } from './components/compartir/metadata/padre-meta/p
 import { HijoMetaComponent } from './components/compartir/metadata/hijo-meta/hijo-meta.component';
 import { HijoAliaComponent } from './components/compartir/aliasing/hijo-alia/hijo-alia.component';
 import { PadreAliaComponent } from './components/compartir/aliasing/padre-alia/padre-alia.component';
+import { ProyeccionComponent } from './components/proyeccion/proyeccion/proyeccion.component';
+import { PadreUrComponent } from './components/proyeccion/una-ranura/padre-ur/padre-ur.component';
+import { HijoUrComponent } from './components/proyeccion/una-ranura/hijo-ur/hijo-ur.component';
+import { HijoMrComponent } from './components/proyeccion/multiple-ranura/hijo-mr/hijo-mr.component';
+import { PadreMrComponent } from './components/proyeccion/multiple-ranura/padre-mr/padre-mr.component';
+import { PadreCoComponent } from './components/proyeccion/condicional/padre-co/padre-co.component';
+import { HijoCoComponent, ZippyContentDirective, ZippyToggleDirective } from './components/proyeccion/condicional/hijo-co/hijo-co.component';
+import { HijoComComponent } from './components/proyeccion/complejos/hijo-com/hijo-com.component';
+import { PadreComComponent } from './components/proyeccion/complejos/padre-com/padre-com.component';
 
 
 const app_routes: Routes = [
@@ -86,6 +95,7 @@ const app_routes: Routes = [
   { path: 'interacc', component: InteraccionComponent }, 
   { path: 'stylexxx', component: StyleComponent }, 
   { path: 'comparti', component: CompartirComponent },
+  { path: 'slotsxxx', component: ProyeccionComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'homexxxx' },
 ];
 
@@ -153,12 +163,17 @@ const app_routes: Routes = [
     HijoMetaComponent,
     HijoAliaComponent,
     PadreAliaComponent,
- 
-   
- 
- 
-  
-
+    ProyeccionComponent,
+    PadreUrComponent,
+    HijoUrComponent,
+    HijoMrComponent,
+    PadreMrComponent,
+    ZippyToggleDirective,
+    ZippyContentDirective,
+    PadreCoComponent,
+    HijoCoComponent,
+    HijoComComponent,
+    PadreComComponent,
   ],
   imports: [
     BrowserModule,

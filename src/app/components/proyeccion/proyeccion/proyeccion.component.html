@@ -1,0 +1,55 @@
+<app-layout>
+    <a href="https://angular.io/guide/content-projection" target="_blank">Documentaci&oacute;n Fuente</a>
+    <h2 tituloxx>Proyecci&oacute;n de contenido (Slots)</h2>
+    <div breadcrumbs>
+        <ol>
+            <li>
+                <a routerLink="/homexxxx">Home</a>
+            </li>
+            <li>
+                Curso Angular
+            </li>
+            <li>
+                Componentes
+            </li>
+            <li>
+                Proyecci&oacute;n de contenido (Slots)
+            </li>
+        </ol>
+    </div>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="unaranur-tab" data-bs-toggle="tab" data-bs-target="#unaranur"
+                type="button" role="tab" aria-controls="unaranur" aria-selected="true">
+                Una ranura (&Uacute;nico slot)
+            </button>
+            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile"
+                type="button" role="tab" aria-controls="nav-profile" aria-selected="false">
+                Varias ranuras (M&uacute;ltiple slot)
+            </button>
+            <button class="nav-link" id="condicio-tab" data-bs-toggle="tab" data-bs-target="#condicio" type="button"
+                role="tab" aria-controls="condicio" aria-selected="false">
+                Condicional
+            </button>
+            <button class="nav-link" id="complejo-tab" data-bs-toggle="tab" data-bs-target="#complejo" type="button"
+                role="tab" aria-controls="complejo" aria-selected="false">
+                Complejos
+            </button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="unaranur" role="tabpanel" aria-labelledby="unaranur-tab">
+            <app-padre-ur></app-padre-ur>
+        </div>
+        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+            <app-padre-mr></app-padre-mr>
+        </div>
+        <div class="tab-pane fade" id="condicio" role="tabpanel" aria-labelledby="condicio-tab">
+            <app-padre-co></app-padre-co>
+        </div>
+        <div class="tab-pane fade" id="complejo" role="tabpanel" aria-labelledby="complejo-tab">
+            <app-padre-com></app-padre-com>
+        </div>
+    </div>
+</app-layout>

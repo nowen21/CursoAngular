@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        <h2>Content projection with ngProjectAs</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+                Default:
+                <ng-content></ng-content>
+            </div>
+            <div class="col-6">
+                Question:
+                <ng-content select="[question]"></ng-content>
+            </div>
+        </div>
+    </div>
+</div>
