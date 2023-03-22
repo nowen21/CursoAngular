@@ -1,26 +1,21 @@
 <app-layout>
+    <h2 tituloxx>ngAfterContentInit</h2>
     <div breadcrumbs>
-        <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-                <h2>ngAfterContentInit</h2>
-                <ol>
-                    <li>
-                        <a routerLink="/homexxxx">Home</a>
-                    </li>
-                    <li>
-                        Curso Angular
-                    </li>
-                    <li>
-                        Lifecycle Components
-                    </li>
-                    <li>
-                        ngAfterContentInit
-                    </li>
-                </ol>
-            </div>
-
-        </div>
+        <ol>
+            <li>
+                <a routerLink="/homexxxx">Home</a>
+            </li>
+            <li>
+                Curso Angular
+            </li>
+            <li>Componentes</li>
+            <li>
+                Lifecycle Components
+            </li>
+            <li>
+                ngAfterContentInit
+            </li>
+        </ol>
     </div>
     <div class="card">
         <div class="card-header">
@@ -29,7 +24,7 @@
         <div class="card-body">
             <div class="row">
                 <div class="col-12">
-                      <app-after-view-child  *ngIf="show"></app-after-view-child>
+                    <app-after-view-child *ngIf="show"></app-after-view-child>
                 </div>
             </div>
         </div>

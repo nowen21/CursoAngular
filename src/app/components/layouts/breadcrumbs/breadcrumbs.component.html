@@ -1,5 +1,8 @@
 <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
-        <ng-content></ng-content>
+        <div class="d-flex justify-content-between align-items-center">
+            <ng-content select="[tituloxx]"></ng-content>
+            <ng-content></ng-content>
+        </div>
     </div>
 </section>

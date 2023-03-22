@@ -1,0 +1,22 @@
+<div class="card">
+    <div class="card-header">
+        <h2>Control de la misi&oacute;n</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" (click)="announce()">Anuciar la misi&oacute;n</button>
+            </div>
+            <div class="col-12">
+                <app-astronaut *ngFor="let astronaut of astronauts" [astronaut]="astronaut">
+                </app-astronaut>
+            </div>
+            <div class="col-12">
+                <h3>Historia</h3>
+                <ul>
+                    <li *ngFor="let event of history">{{event}}</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

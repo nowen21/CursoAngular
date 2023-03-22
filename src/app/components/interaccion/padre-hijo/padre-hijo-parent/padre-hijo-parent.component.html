@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Pasar datos de un componente padre a un componente hijo con @Input</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                Decorador<a target="_blank" href="https://angular.io/guide/inputs-outputs#input"> @Inpur </a>
+                <h2>{{master}} controls {{heroes.length}} heroes</h2>
+                <app-padre-hijo-child *ngFor="let hero of heroes" [heroe]="hero" [master]="master">
+
+                </app-padre-hijo-child>
+            </div>
+
+        </div>
+    </div>
+</div>

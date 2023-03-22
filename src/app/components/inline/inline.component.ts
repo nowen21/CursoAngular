@@ -1,28 +1,23 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-inline',
-  template: `
+    selector: 'app-inline',
+    template: `
  <app-layout>
-    <div breadcrumbs>
-        <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-                <h2>Html y Css en l&iacute;nea</h2>
-                <ol>
-                    <li>
-                        <a routerLink="/homexxxx">Home</a>
-                    </li>
-                    <li>
-                        Curso Angular
-                    </li>
-                    <li>
-                    Html y Css en l&iacute;nea
-                    </li>
-                </ol>
-            </div>
-
-        </div>
+ <h2 tituloxx>Html y Css en l&iacute;nea</h2>
+    <div breadcrumbs>  
+        <ol>
+            <li>
+                <a routerLink="/homexxxx">Home</a>
+            </li>
+            <li>
+                Curso Angular
+            </li>
+            <li>Componentes</li>
+            <li>
+                Html y Css en l&iacute;nea
+            </li>
+        </ol>
     </div>
     <div class="card">
         <div class="card-body">
@@ -34,7 +29,7 @@ import { Component } from '@angular/core';
         </div>            
     </div>
 </app-layout>`,
-  styles: [".ddiv{background-color:red}"]
+    styles: [".ddiv{background-color:red}"]
 })
 export class InlineComponent {
 

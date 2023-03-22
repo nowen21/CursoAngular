@@ -34,8 +34,29 @@ import { LoggerService } from './components/lifecycle/services/logger.service';
 import { AfterViewGrandChildComponent } from './components/lifecycle/after-view/after-view-grand-child/after-view-grand-child.component';
 import { AfterViewChildComponent } from './components/lifecycle/after-view/after-view-child/after-view-child.component';
 import { AfterViewParentComponent } from './components/lifecycle/after-view/after-view-parent/after-view-parent.component';
-
-
+import { NoEncapsulationComponent } from './components/encapsulado/no-encapsulation/no-encapsulation.component';
+import { EmulatedEncapsulationComponent } from './components/encapsulado/emulated-encapsulation/emulated-encapsulation.component';
+import { ShadowDomEncapsulationComponent } from './components/encapsulado/shadow-dom-encapsulation/shadow-dom-encapsulation.component';
+import { EncapsulationComponent } from './components/encapsulado/encapsulation/encapsulation.component';
+import { InteraccionComponent } from './components/interaccion/interaccion/interaccion.component';
+import { PadreHijoParentComponent } from './components/interaccion/padre-hijo/padre-hijo-parent/padre-hijo-parent.component';
+import { PadreHijoChildComponent } from './components/interaccion/padre-hijo/padre-hijo-child/padre-hijo-child.component';
+import { NameChildComponent } from './components/interaccion/setter/name-child/name-child.component';
+import { NameParentComponent } from './components/interaccion/setter/name-parent/name-parent.component';
+import { VersionChildComponent } from './components/interaccion/version/version-child/version-child.component';
+import { VersionParentComponent } from './components/interaccion/version/version-parent/version-parent.component';
+import { VoterComponent } from './components/interaccion/voter/voter/voter.component';
+import { VotetakerComponent } from './components/interaccion/voter/votetaker/votetaker.component';
+import { CountdownTimerVlComponent } from './components/interaccion/via-variable-local/countdown-timer-vl/countdown-timer-vl.component';
+import { CountdownParentVlComponent } from './components/interaccion/via-variable-local/countdown-parent-vl/countdown-parent-vl.component';
+import { CountdownTimerVhComponent } from './components/interaccion/via-vista-hija/countdown-timer-vh/countdown-timer-vh.component';
+import { CountdownParentVhComponent } from './components/interaccion/via-vista-hija/countdown-parent-vh/countdown-parent-vh.component';
+import { AstronautComponent } from './components/interaccion/via-servicio/astronaut/astronaut.component';
+import { MisioncontrolComponent } from './components/interaccion/via-servicio/misioncontrol/misioncontrol.component';
+import { MissionService } from './components/interaccion/services/mission.service';
+import { StyleComponent } from './components/styles/style/style.component';
+import { HeroMainComponent } from './components/styles/hero-main/hero-main.component';
+import { NavbarInteraComponent } from './components/interaccion/navbar-intera/navbar-intera.component';
 
 const app_routes: Routes = [
   { path: 'homexxxx', component: HomeComponent },
@@ -45,6 +66,9 @@ const app_routes: Routes = [
   { path: 'oninitxx', component: OnInitComponent },
   { path: 'aftecont', component: AfterContentInitParentComponent },
   { path: 'afteview', component: AfterViewParentComponent },
+  { path: 'encapsul', component: EncapsulationComponent }, 
+  { path: 'interacc', component: InteraccionComponent }, 
+  { path: 'stylexxx', component: StyleComponent }, 
   { path: '**', pathMatch: 'full', redirectTo: 'homexxxx' },
 ];
 
@@ -75,6 +99,30 @@ const app_routes: Routes = [
     AfterViewGrandChildComponent,
     AfterViewChildComponent,
     AfterViewParentComponent,
+    NoEncapsulationComponent,
+    EmulatedEncapsulationComponent,
+    ShadowDomEncapsulationComponent,
+    EncapsulationComponent,
+    InteraccionComponent,
+    PadreHijoParentComponent,
+    PadreHijoChildComponent,
+    NameChildComponent,
+    NameParentComponent,
+    VersionChildComponent,
+    VersionParentComponent,
+    VoterComponent,
+    VotetakerComponent,
+    CountdownTimerVlComponent,
+    CountdownParentVlComponent,
+    CountdownTimerVhComponent,
+    CountdownParentVhComponent,
+    AstronautComponent,
+    MisioncontrolComponent,
+    StyleComponent,
+    HeroMainComponent,
+    NavbarInteraComponent,
+   
+ 
  
   
 
@@ -91,7 +139,8 @@ const app_routes: Routes = [
     FormsModule
   ],
   providers: [
-    LoggerService
+    LoggerService,
+    MissionService
   ],
   bootstrap: [AppComponent],
     // exportar la funcionalidad seleccionada para que la utilicen otros NgModules.

@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Cuenta regresiva (via ViewChild)</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" (click)="start()">Start</button>
+                <button class="btn btn-primary" type="button" (click)="stop()">Stop</button>
+                <div class="seconds">{{ seconds() }}</div>
+            </div>
+            <div class="col-12">
+                <app-countdown-timer-vh></app-countdown-timer-vh>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,37 @@
+<app-layout>
+    <h2 tituloxx>Encapsulaci&oacute;n</h2>
+
+    <div breadcrumbs>
+
+        <ol>
+            <li>
+                <a routerLink="/homexxxx">Home</a>
+            </li>
+            <li>
+                Curso Angular
+            </li>
+            <li>
+                Componentes
+            </li>
+            <li>
+                Encapsulaci&oacute;n
+            </li>
+        </ol>
+    </div>
+    Decorador<a target="_blank" href="https://angular.io/api/core/Component"> @Component </a>
+    <div class="card">
+        <div class="card-body">
+            <div class="row">
+                <div class="col-4">
+                    <app-no-encapsulation></app-no-encapsulation>
+                </div>
+                <div class="col-4">
+                    <app-emulated-encapsulation></app-emulated-encapsulation>
+                </div>
+                <div class="col-4">
+                    <app-shadow-dom-encapsulation></app-shadow-dom-encapsulation>
+                </div>
+            </div>
+        </div>
+    </div>
+</app-layout>

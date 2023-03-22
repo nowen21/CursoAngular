@@ -1,0 +1,67 @@
+<nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+        <button class="nav-link active" id="pasinput-tab" data-bs-toggle="tab" data-bs-target="#pasinput" type="button"
+            role="tab" aria-controls="pasinput" aria-selected="true">
+            @Input
+        </button>
+        <button class="nav-link" id="entsette-tab" data-bs-toggle="tab" data-bs-target="#entsette" type="button"
+            role="tab" aria-controls="entsette" aria-selected="false">
+            Setter
+        </button>
+        <button class="nav-link" id="onchange-tab" data-bs-toggle="tab" data-bs-target="#onchange" type="button"
+            role="tab" aria-controls="onchange" aria-selected="false">
+            ngOnChanges()
+        </button>
+        <button class="nav-link" id="votetake-tab" data-bs-toggle="tab" data-bs-target="#votetake" type="button"
+            role="tab" aria-controls="votetake" aria-selected="false">
+            Cumunicación padre e hijo
+        </button>
+        <button class="nav-link" id="varlocal-tab" data-bs-toggle="tab" data-bs-target="#varlocal" type="button"
+            role="tab" aria-controls="varlocal" aria-selected="false">
+           variable local
+        </button>
+
+        <button class="nav-link" id="viavishi-tab" data-bs-toggle="tab" data-bs-target="#viavishi" type="button"
+            role="tab" aria-controls="viavishi" aria-selected="false">
+            Cuenta regresiva (via ViewChild)
+        </button>
+
+        <button class="nav-link" id="misionxx-tab" data-bs-toggle="tab" data-bs-target="#misionxx" type="button"
+            role="tab" aria-controls="misionxx" aria-selected="false">
+            Control de la misi&oacute;n
+        </button>
+
+    </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+    <div class="tab-pane fade show active" id="pasinput" role="tabpanel" aria-labelledby="pasinput-tab">
+        <app-padre-hijo-parent></app-padre-hijo-parent>
+    </div>
+    <div class="tab-pane fade" id="entsette" role="tabpanel" aria-labelledby="entsette-tab">
+        <app-name-parent></app-name-parent>
+    </div>
+    <div class="tab-pane fade" id="onchange" role="tabpanel" aria-labelledby="onchange-tab">
+        <app-version-parent></app-version-parent>
+    </div>
+    <div class="tab-pane fade" id="votetake" role="tabpanel" aria-labelledby="votetake-tab">
+        <app-votetaker></app-votetaker>
+    </div>
+    <div class="tab-pane fade" id="varlocal" role="tabpanel" aria-labelledby="varlocal-tab">
+        <app-countdown-parent-vl></app-countdown-parent-vl>
+    </div>
+    <div class="tab-pane fade" id="viavishi" role="tabpanel" aria-labelledby="viavishi-tab">
+        <app-countdown-parent-vh></app-countdown-parent-vh>
+    </div>
+    <div class="tab-pane fade" id="misionxx" role="tabpanel" aria-labelledby="misionxx-tab">
+        <app-misioncontrol></app-misioncontrol>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+

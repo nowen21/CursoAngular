@@ -1,0 +1,28 @@
+
+<div class="card">
+    <div class="card-header">
+        <h2 class="probarestilo">ShadowDom</h2>
+        <div class="shadow-message">Shadow DOM encapsulation</div>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-6">
+               Utiliza la implementaci&oacute;n vigente del navegador del ShadowDom para encupsular los estilos del componente, esto hace que el componente quede 
+               completamente aislado a lo que se refiere a estilos.
+               los estilos globales no afectan al componente
+            </div>
+            <div class="col-6">
+                Los estilos de los componentes solo se agregan al host shadow DOM, lo que garantiza que solo afecten a los elementos dentro de las vistas de sus respectivos componentes.
+            </div>
+            <div class="col-6">
+                <app-emulated-encapsulation></app-emulated-encapsulation>
+            </div>
+            <div class="col-6">
+                <app-no-encapsulation></app-no-encapsulation>
+            </div>
+        </div>
+    </div>
+    <div class="form-group card-footer text-muted text-center">
+        
+    </div>
+</div>

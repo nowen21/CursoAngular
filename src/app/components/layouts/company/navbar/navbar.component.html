@@ -1,37 +1,51 @@
 <nav id="navbar" class="navbar order-last order-lg-0">
   <ul>
-    <li><a routerLink="/homexxxx" routerLinkActive="active">Home</a></li>
+
     <li class="dropdown"><a href="#"><span>Curso Angular</span> <i class="bi bi-chevron-down"></i></a>
       <ul>
-        <li>
-          <a class="dropdown-item" routerLink="/inlinexx" routerLinkActive="active">Html y Css en l&iacute;nea</a>
-        </li>
-        <li class="dropdown"><a href="#"><span>Lifecycle Components</span> <i class="bi bi-chevron-right"></i></a>
+        <li class="dropdown">
+          <a href="#">
+            <span>Componentes</span>
+            <i class="bi bi-chevron-right"></i>
+          </a>
           <ul>
+           
             <li>
-              <a class="dropdown-item" routerLink="/onchange" routerLinkActive="active">ngOnChanges</a>
+              <a class="dropdown-item" routerLink="/inlinexx" routerLinkActive="active">Html y Css en l&iacute;nea</a>
             </li>
-            <li>
-              <a class="dropdown-item" routerLink="/oninitxx" routerLinkActive="active"> ngOnInit</a>
+            <li class="dropdown"><a href="#"><span>Lifecycle Components</span> <i class="bi bi-chevron-left"></i></a>
+              <ul>
+                <li>
+                  <a class="dropdown-item" routerLink="/onchange" routerLinkActive="active">ngOnChanges</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/oninitxx" routerLinkActive="active"> ngOnInit</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/docheckx" routerLinkActive="active">ngDoCheck</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/aftecont" routerLinkActive="active">ngAfterContentInit y
+                    ngAfterContentChecked</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" routerLink="/afteview" routerLinkActive="active">ngAfterViewInit y
+                    ngAfterViewChecked </a>
+                </li>
+              </ul>
+
             </li>
-            <li>
-              <a class="dropdown-item" routerLink="/docheckx" routerLinkActive="active">ngDoCheck</a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="/aftecont" routerLinkActive="active">ngAfterContentInit y ngAfterContentChecked</a>
-            </li>
-            <li>
-              <a class="dropdown-item" routerLink="/afteview" routerLinkActive="active">ngAfterViewInit y ngAfterViewChecked  </a>
-            </li>
+            <li><a class="dropdown-item" routerLink="/encapsul" routerLinkActive="active">Encapsula&oacute;n</a></li>
+            <li><a class="dropdown-item" routerLink="/interacc" routerLinkActive="active">Interacci&oacute;n</a></li>
+            <li><a class="dropdown-item" routerLink="/stylexxx" routerLinkActive="active">Estilos</a></li>
           </ul>
         </li>
 
-        <!-- <li><a href="team.html">Team</a></li>
-          <li><a href="testimonials.html">Testimonials</a></li> -->
+        <!-- <li><a href="testimonials.html">Testimonials</a></li> -->
 
       </ul>
     </li>
-
+    <li><a routerLink="/homexxxx" routerLinkActive="active">Home</a></li>
 
     <!-- <li class="dropdown"><a href="#"><span>About</span> <i class="bi bi-chevron-down"></i></a>
         <ul>

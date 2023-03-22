@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        <h3>Cuenta regresiva (via  variable local)</h3>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <button class="btn btn-primary" type="button" (click)="timer.start()">Start</button>
+                <button class="btn btn-primary" type="button" (click)="timer.stop()">Stop</button>
+                <div class="seconds">{{timer.seconds}}</div>
+            </div>
+            <div class="col-12">
+                <app-countdown-timer-vl #timer></app-countdown-timer-vl>
+            </div>
+        </div>
+    </div>
+</div>

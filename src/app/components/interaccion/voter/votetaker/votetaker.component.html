@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-header">
+        <h2>Debería la humanidad colonizar el universo?</h2>
+    </div>
+    <div class="card-body">
+        <div class="row">
+            <div class="col-12">
+                <h3>Agregados: {{agreed}}, Desagregados: {{disagreed}}</h3>
+            </div>
+            <div class="col-12">
+
+                <app-voter *ngFor="let voter of voters" [name]="voter" (voted)="onVoted($event)">
+                </app-voter>
+            </div>
+        </div>
+    </div>
+</div>
