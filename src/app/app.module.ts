@@ -57,6 +57,10 @@ import { MissionService } from './components/interaccion/services/mission.servic
 import { StyleComponent } from './components/styles/style/style.component';
 import { HeroMainComponent } from './components/styles/hero-main/hero-main.component';
 import { NavbarInteraComponent } from './components/interaccion/navbar-intera/navbar-intera.component';
+import { QuestSummaryComponent } from './components/styles/quest-summary/quest-summary.component';
+import { HeroDetailsComponent } from './components/styles/hero-details/hero-details.component';
+import { HeroControlsComponent } from './components/styles/hero-controls/hero-controls.component';
+import { HeroTeamComponent } from './components/styles/hero-team/hero-team.component';
 
 const app_routes: Routes = [
   { path: 'homexxxx', component: HomeComponent },
@@ -121,6 +125,10 @@ const app_routes: Routes = [
     StyleComponent,
     HeroMainComponent,
     NavbarInteraComponent,
+    QuestSummaryComponent,
+    HeroDetailsComponent,
+    HeroControlsComponent,
+    HeroTeamComponent,
    
  
  
