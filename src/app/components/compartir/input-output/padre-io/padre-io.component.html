@@ -1,0 +1,10 @@
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title">Input and Output together</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Open the console to see the EventEmitter at work when you click Delete.</h6>
+  </div>
+  <div class="card-body">
+    <app-hijo-io [item]="currentItem" (deleteRequest)="crossOffItem($event)">
+    </app-hijo-io>
+  </div>
+</div>

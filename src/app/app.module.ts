@@ -61,6 +61,18 @@ import { QuestSummaryComponent } from './components/styles/quest-summary/quest-s
 import { HeroDetailsComponent } from './components/styles/hero-details/hero-details.component';
 import { HeroControlsComponent } from './components/styles/hero-controls/hero-controls.component';
 import { HeroTeamComponent } from './components/styles/hero-team/hero-team.component';
+import { CompartirComponent } from './components/compartir/compartir/compartir.component';
+import { PadrePhComponent } from './components/compartir/padre-hijo/padre-ph/padre-ph.component';
+import { HijoPhComponent } from './components/compartir/padre-hijo/hijo-ph/hijo-ph.component';
+import { HijoHpComponent } from './components/compartir/hijo-padre/hijo-hp/hijo-hp.component';
+import { PadreHpComponent } from './components/compartir/hijo-padre/padre-hp/padre-hp.component';
+import { HijoIoComponent } from './components/compartir/input-output/hijo-io/hijo-io.component';
+import { PadreIoComponent } from './components/compartir/input-output/padre-io/padre-io.component';
+import { PadreMetaComponent } from './components/compartir/metadata/padre-meta/padre-meta.component';
+import { HijoMetaComponent } from './components/compartir/metadata/hijo-meta/hijo-meta.component';
+import { HijoAliaComponent } from './components/compartir/aliasing/hijo-alia/hijo-alia.component';
+import { PadreAliaComponent } from './components/compartir/aliasing/padre-alia/padre-alia.component';
+
 
 const app_routes: Routes = [
   { path: 'homexxxx', component: HomeComponent },
@@ -73,6 +85,7 @@ const app_routes: Routes = [
   { path: 'encapsul', component: EncapsulationComponent }, 
   { path: 'interacc', component: InteraccionComponent }, 
   { path: 'stylexxx', component: StyleComponent }, 
+  { path: 'comparti', component: CompartirComponent },
   { path: '**', pathMatch: 'full', redirectTo: 'homexxxx' },
 ];
 
@@ -129,6 +142,18 @@ const app_routes: Routes = [
     HeroDetailsComponent,
     HeroControlsComponent,
     HeroTeamComponent,
+    CompartirComponent,
+    PadrePhComponent,
+    HijoPhComponent,
+    HijoHpComponent,
+    PadreHpComponent,
+    HijoIoComponent,
+    PadreIoComponent,
+    PadreMetaComponent,
+    HijoMetaComponent,
+    HijoAliaComponent,
+    PadreAliaComponent,
+ 
    
  
  

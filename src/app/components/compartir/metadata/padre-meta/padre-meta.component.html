@@ -1,0 +1,11 @@
+<div class="card">
+  <div class="card-header">
+    <h5 class="card-title">Input and Output in the component class metadata</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Open the console to see the EventEmitter at work when you click Buy.</h6>
+
+  </div>
+  <div class="card-body">
+    <app-hijo-meta [clearanceItem]="lastChanceItem" (buyEvent)="buyClearanceItem($event)">
+    </app-hijo-meta>
+  </div>
+</div>

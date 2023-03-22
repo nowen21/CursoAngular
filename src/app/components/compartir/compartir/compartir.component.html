@@ -1,0 +1,64 @@
+<app-layout>
+    <a href="https://angular.io/guide/inputs-outputs" target="_blank">Documentaci&oacute;n Fuente</a>
+    <h2 tituloxx>Compartir datos</h2>
+    <div breadcrumbs>
+        <ol>
+            <li>
+                <a routerLink="/homexxxx">Home</a>
+            </li>
+            <li>
+                Curso Angular
+            </li>
+            <li>
+                Componentes
+            </li>
+            <li>
+                Compartir datos
+            </li>
+        </ol>
+    </div>
+
+    <nav>
+        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button class="nav-link active" id="padrhijo-tab" data-bs-toggle="tab" data-bs-target="#padrhijo"
+                type="button" role="tab" aria-controls="padrhijo" aria-selected="true">
+                Padre a hijo
+            </button>
+            <button class="nav-link" id="hijopadr-tab" data-bs-toggle="tab" data-bs-target="#hijopadr" type="button"
+                role="tab" aria-controls="hijopadr" aria-selected="false">
+                Hijo a padre
+            </button>
+            <button class="nav-link" id="inpuoupu-tab" data-bs-toggle="tab" data-bs-target="#inpuoupu" type="button"
+                role="tab" aria-controls="inpuoupu" aria-selected="false">
+                Input Output
+            </button>
+            <button class="nav-link" id="metadata-tab" data-bs-toggle="tab" data-bs-target="#metadata" type="button"
+                role="tab" aria-controls="metadata" aria-selected="false">
+                Metadata
+            </button>
+            <button class="nav-link" id="aliasing-tab" data-bs-toggle="tab" data-bs-target="#aliasing" type="button"
+                role="tab" aria-controls="aliasing" aria-selected="false">
+                Aliasing
+            </button>
+        </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="padrhijo" role="tabpanel" aria-labelledby="padrhijo-tab">
+            <app-padre-ph></app-padre-ph>
+        </div>
+        <div class="tab-pane fade" id="hijopadr" role="tabpanel" aria-labelledby="hijopadr-tab">
+            <app-padre-hp></app-padre-hp>
+        </div>
+        <div class="tab-pane fade" id="inpuoupu" role="tabpanel" aria-labelledby="inpuoupu-tab">
+            <app-padre-io></app-padre-io>
+        </div>
+        <div class="tab-pane fade" id="metadata" role="tabpanel" aria-labelledby="metadata-tab">
+            <app-padre-meta></app-padre-meta>
+        </div>
+        <div class="tab-pane fade" id="aliasing" role="tabpanel" aria-labelledby="aliasing-tab">
+            <app-padre-alia></app-padre-alia>
+        </div>
+    </div>
+
+
+</app-layout>
